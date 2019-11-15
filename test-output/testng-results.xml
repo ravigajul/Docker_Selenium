@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="2" total="13" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="97709" started-at="2019-11-15T15:19:27Z" finished-at="2019-11-15T15:21:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="97709" started-at="2019-11-15T15:19:27Z" finished-at="2019-11-15T15:21:05Z">
+      <class name="com.ClarityPPMHealthCheck">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.ClarityPPMHealthCheck@64f6106c]" name="setup" is-config="true" duration-ms="13784" started-at="2019-11-15T15:19:27Z" finished-at="2019-11-15T15:19:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@61af1510]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ValidateNikuLogin()[pri:1, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateNikuLogin" duration-ms="12900" started-at="2019-11-15T15:19:41Z" finished-at="2019-11-15T15:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNikuLogin -->
+        <test-method status="PASS" signature="ValidateLearnLink()[pri:2, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateLearnLink" duration-ms="11226" started-at="2019-11-15T15:19:54Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLearnLink -->
+        <test-method status="PASS" signature="ValidateAboutDialog()[pri:3, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateAboutDialog" duration-ms="228" started-at="2019-11-15T15:20:05Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAboutDialog -->
+        <test-method status="PASS" signature="ValidateProductName()[pri:4, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateProductName" duration-ms="5068" started-at="2019-11-15T15:20:05Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateAboutDialog" finished-at="2019-11-15T15:20:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateProductName -->
+        <test-method status="PASS" signature="ValidateBuildVersion()[pri:5, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateBuildVersion" duration-ms="59" started-at="2019-11-15T15:20:10Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateAboutDialog" finished-at="2019-11-15T15:20:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateBuildVersion -->
+        <test-method status="PASS" signature="ValidateJasperSoftBuildVersion()[pri:6, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateJasperSoftBuildVersion" duration-ms="72" started-at="2019-11-15T15:20:10Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateAboutDialog" finished-at="2019-11-15T15:20:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateJasperSoftBuildVersion -->
+        <test-method status="PASS" signature="ValidateProcessEnginesColors()[pri:8, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateProcessEnginesColors" duration-ms="1986" started-at="2019-11-15T15:20:10Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateProcessEnginesColors -->
+        <test-method status="PASS" signature="ValidateContentAddinsStatus()[pri:9, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateContentAddinsStatus" duration-ms="4267" started-at="2019-11-15T15:20:12Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateContentAddinsStatus -->
+        <test-method status="PASS" signature="ValidateResources()[pri:10, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateResources" duration-ms="1591" started-at="2019-11-15T15:20:17Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResources -->
+        <test-method status="FAIL" signature="ValidateAdvanceReporting()[pri:11, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateAdvanceReporting" duration-ms="39311" started-at="2019-11-15T15:20:18Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateNikuLogin" finished-at="2019-11-15T15:20:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Description had  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Description had  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at pages.NikuHomePage.checkAdvanceReporting(NikuHomePage.java:307)
+at com.ClarityPPMHealthCheck.ValidateAdvanceReporting(ClarityPPMHealthCheck.java:172)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAdvanceReporting -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ClarityPPMHealthCheck@64f6106c]" name="teardown" is-config="true" duration-ms="6353" started-at="2019-11-15T15:20:58Z" finished-at="2019-11-15T15:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="ValidateJasperSoftReport()[pri:11, instance:com.ClarityPPMHealthCheck@64f6106c]" name="ValidateJasperSoftReport" duration-ms="0" started-at="2019-11-15T15:20:58Z" depends-on-methods="com.ClarityPPMHealthCheck.ValidateAdvanceReporting" finished-at="2019-11-15T15:20:58Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClarityPPMHealthCheck.ValidateJasperSoftReport()[pri:11, instance:com.ClarityPPMHealthCheck@64f6106c] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClarityPPMHealthCheck.ValidateJasperSoftReport()[pri:11, instance:com.ClarityPPMHealthCheck@64f6106c] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateJasperSoftReport -->
+      </class> <!-- com.ClarityPPMHealthCheck -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

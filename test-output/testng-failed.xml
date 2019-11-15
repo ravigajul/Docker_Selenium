@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.ClarityPPMHealthCheck">
+        <methods>
+          <include name="ValidateJasperSoftReport"/>
+          <include name="ValidateAdvanceReporting"/>
+          <include name="teardown"/>
+          <include name="ValidateNikuLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ClarityPPMHealthCheck -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
